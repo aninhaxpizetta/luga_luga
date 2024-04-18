@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Luga Luga</string>
+    <string name="label"><b>E-mail</b></string>
+    <string name="senha"><b>Senha</b></string>
+    <string name="cal"><b>Logar</b></string>
+
 </resources>

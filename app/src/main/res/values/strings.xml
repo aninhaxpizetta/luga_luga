@@ -4,4 +4,10 @@
     <string name="senha"><b>Senha</b></string>
     <string name="cal"><b>Logar</b></string>
 
+
+
+    <string name="tv_produto">Nome Produto</string>
+    <string name="tv_preco">R$ 00,00</string>
+    <string name="tv_descricao">The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.</string>
+
 </resources>

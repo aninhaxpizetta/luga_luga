@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -16,6 +17,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.example.lugaluga.model.Produto;
+import com.example.lugaluga.view.ProdutoActivty;
 import com.example.lugaluga.view.adapter.adapterProduto;
 
 import java.util.ArrayList;
@@ -53,11 +55,14 @@ private List<Produto> produtoList = new ArrayList<>();
         recyclerView.addOnItemTouchListener(new RecyclerItemClickListener(getApplicationContext(), recyclerView, new RecyclerItemClickListener.OnItemClickListener() {
             @Override
             public void onItemClick(View view, int position) {
-
+                Intent intent = new Intent(MainActivity.this, ProdutoActivty.class);
+                intent.putExtra("produto", produtoList.get(position));
+                startActivity(intent);
             }
 
             @Override
             public void onLongItemClick(View view, int position) {
+                Toast.makeText(getApplicationContext(), produtoList.get(position).getStatus(), Toast.LENGTH_SHORT).show();
 
             }
 

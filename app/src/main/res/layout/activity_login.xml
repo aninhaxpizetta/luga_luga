@@ -43,42 +43,47 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
+
     <TextView
         android:id="@+id/texto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Esqueci a Senha"
         android:layout_gravity="center"
         android:layout_margin="20dp"
+        android:layout_marginTop="28dp"
+        android:text="Esqueci a Senha"
         android:textColor="@color/blue_dark"
-        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/senha"/>
-
+        app:layout_constraintTop_toBottomOf="@+id/senha" />
 
     <Button
         android:id="@+id/but"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_gravity='center'
-        android:layout_marginStart="160dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/blue_dark"
         android:text="@string/cal"
         android:textSize="15dp"
-        android:backgroundTint="@color/blue_dark"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/texto" />
 
     <TextView
-        android:id="@+id/ana"
+        android:id="@+id/fazerCadastro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Crie um Usuário"
         android:layout_gravity="center"
         android:layout_margin="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Fazer Cadastro"
         android:textColor="@color/blue_dark"
-        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.455"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/but"/>
+        app:layout_constraintTop_toBottomOf="@+id/but" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
